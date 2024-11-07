@@ -30,7 +30,7 @@
                 "filter": [],
                 "query": {
                     "language": "kuery",
-                    "query": ""
+                    "query": "event.dataset: \"blacklens.alerts\" "
                 }
             }
         },
@@ -264,7 +264,7 @@
                             "internalReferences": [],
                             "query": {
                                 "language": "kuery",
-                                "query": ""
+                                "query": "event.dataset: \"blacklens.alerts\" "
                             },
                             "visualization": {
                                 "axisTitlesVisibilitySettings": {
@@ -418,7 +418,7 @@
                             "internalReferences": [],
                             "query": {
                                 "language": "kuery",
-                                "query": ""
+                                "query": "event.dataset: \"blacklens.alerts\" "
                             },
                             "visualization": {
                                 "layers": [
@@ -568,7 +568,7 @@
                             "internalReferences": [],
                             "query": {
                                 "language": "kuery",
-                                "query": ""
+                                "query": "event.dataset: \"blacklens.alerts\" "
                             },
                             "visualization": {
                                 "axisTitlesVisibilitySettings": {
@@ -721,7 +721,7 @@
                             "internalReferences": [],
                             "query": {
                                 "language": "kuery",
-                                "query": ""
+                                "query": "event.dataset: \"blacklens.alerts\" "
                             },
                             "visualization": {
                                 "colorMapping": {

@@ -4,7 +4,7 @@ title: "blacklens.io"
 version: 0.0.1
 source:
   license: "Elastic-2.0"
-description: "blacklens.io Integration to Sync Alerts"
+description: "Collect logs from blacklens.io with Elastic Agent"
 type: integration
 categories:
   - security
@@ -14,13 +14,13 @@ conditions:
   elastic:
     subscription: "basic"
 screenshots:
-  - src: /img/sample-screenshot.png
-    title: Sample screenshot
+  - src: /img/blacklens-dashboard.png
+    title: blacklens.io Dashboard
     size: 600x600
     type: image/png
 icons:
-  - src: /img/sample-logo.svg
-    title: Sample logo
+  - src: /img/blacklens-logo.svg
+    title: blacklens.io Logo
     size: 32x32
     type: image/svg+xml
 policy_templates:
