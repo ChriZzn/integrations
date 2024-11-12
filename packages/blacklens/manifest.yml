@@ -15,7 +15,7 @@ conditions:
     subscription: "basic"
 screenshots:
   - src: /img/blacklens-dashboard.png
-    title: blacklens.io Dashboard
+    title: blacklens.io Alerts Dashboard
     size: 600x600
     type: image/png
 icons:
