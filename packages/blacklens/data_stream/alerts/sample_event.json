@@ -190,7 +190,7 @@
          "2024-11-07T09:45:29.354Z"
       ],
       "event.type":[
-         "info"
+         "indicator"
       ],
       "agent.ephemeral_id":[
          "ephemeral-id-12345"

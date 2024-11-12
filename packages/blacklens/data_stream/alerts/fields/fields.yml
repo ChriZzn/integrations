@@ -5,7 +5,7 @@
       type: date
       description: Activity last updated time (UTC).
     - name: id
-      type: keyword
+      type: integer
       description: Unique Alert ID
     - name: severity
       type: keyword
@@ -20,7 +20,7 @@
       type: keyword
       description: Alert Type (Engine)
     - name: type_id
-      type: keyword
+      type: integer
       description: Alert Type ID (Engine)
     - name: title
       type: keyword

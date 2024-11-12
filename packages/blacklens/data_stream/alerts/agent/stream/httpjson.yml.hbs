@@ -12,11 +12,12 @@ request.tracer.maxbackups: 5
 {{#if proxy_url }}
 request.proxy_url: {{proxy_url}}
 {{/if}}
-
 {{#if ssl}}
 request.ssl: {{ssl}}
 {{/if}}
-
+{{#if http_client_timeout}}
+request.timeout: {{http_client_timeout}}
+{{/if}}
 request.transforms:
   - set:
       target: header.X-API-Key
@@ -54,7 +55,9 @@ tags:
 {{#each tags as |tag|}}
   - {{tag}}
 {{/each}}
-
+{{#contains "forwarded" tags}}
+publisher_pipeline.disable_host: true
+{{/contains}}
 {{#if processors}}
 processors:
   {{processors}}

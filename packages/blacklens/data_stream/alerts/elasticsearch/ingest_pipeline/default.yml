@@ -13,25 +13,20 @@ processors:
       field: message
       ignore_missing: true
       if: 'ctx.event?.original != null'
-  - set:
-      field: event.kind
-      value: alert
-  - set:
-      field: event.ingested
-      value: '{{_ingest.timestamp}}'
   - append:
       field: event.category
       value: threat
       allow_duplicates: false
   - set:
       field: event.type
-      value: [info]
+      value: [indicator]
   - json:
       field: event.original
       target_field: json
   - fingerprint:
       fields:
         - json.id
+        - json.updated_date
       target_field: _id
       ignore_missing: true
   - date:
@@ -77,13 +72,7 @@ processors:
       ignore_missing: true
   - remove:
       field: json
-      ignore_failure: true
       ignore_missing: true
-  - remove:
-      field: event.original
-      ignore_missing: true
-      ignore_failure: true
-      if: ctx.tags == null || !(ctx.tags.contains('preserve_original_event'))
   - script:
       description: Drops null/empty values recursively.
       lang: painless
