@@ -19,9 +19,10 @@ processors:
   - set:
       field: event.ingested
       value: '{{_ingest.timestamp}}'
-  - set:
+  - append:
       field: event.category
-      value: [threat]
+      value: threat
+      allow_duplicates: false
   - set:
       field: event.type
       value: [info]
