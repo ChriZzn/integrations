@@ -2,3 +2,9 @@
 - name: event.kind
   type: constant_keyword
   value: alert
+- name: observer.product
+  type: constant_keyword
+  value: blacklens.io
+- name: observer.vendor
+  type: constant_keyword
+  value: blacklens.io

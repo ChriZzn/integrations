@@ -23,6 +23,9 @@ request.transforms:
       target: header.X-API-Key
       value: '{{api_key}}'
   - set:
+      target: header.X-Tenant
+      value: '{{tenant_id}}'
+  - set:
       target: url.params.per_page
       value: '50'
   - set:
