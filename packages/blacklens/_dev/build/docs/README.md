@@ -9,8 +9,6 @@ Use the blacklens.io integration to fetch all related alerts about your Attack S
 The blacklens.io integration collects one type of data streams: logs
 
 **Alerts** returns a list of blacklens.io alerts (The API Docs are referenced within the portal)
-
-
 ## Requirements
 
 You need Elasticsearch for storing and searching your data and Kibana for visualizing and managing it.
