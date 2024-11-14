@@ -33,7 +33,7 @@ You need an active blacklens.io subscription and a user with the `alerts:read` p
 3. Click on the "blacklens.io" integration from the search results.
 4. Click on the "Add blacklens.io" button to add the integration.
 5. Configure all required integration parameters. 
-    - ARC data requires following parameters:
+    - Alert data requires following parameters:
         - `URL`
         - `Tenant ID (tenant_id)`
         - `Workspace ID (ws_id)`
