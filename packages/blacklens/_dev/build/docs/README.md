@@ -12,7 +12,8 @@ The blacklens.io integration collects one type of data streams: logs
 ## Requirements
 
 You need Elasticsearch for storing and searching your data and Kibana for visualizing and managing it.
-You can use our hosted Elasticsearch Service on Elastic Cloud, which is recommended, or self-manage the Elastic Stack on your own hardware.(You will require the 'alerts:read' Permission in order to fetch the Alerts via API
+You can use our hosted Elasticsearch Service on Elastic Cloud, which is recommended, or self-manage the Elastic Stack on your own hardware.
+You will require the `alerts:read` permission in order to fetch the Alerts via the API.
 
 You need an active blacklens.io subscription and a user with the `alerts:read` permission to retrieve alerts via the API.
 
