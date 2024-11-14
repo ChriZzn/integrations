@@ -51,4 +51,5 @@ This is the `alerts` dataset
 #### Example
 
 {{ event "alerts"}}
+
 {{ fields "alerts"}}
