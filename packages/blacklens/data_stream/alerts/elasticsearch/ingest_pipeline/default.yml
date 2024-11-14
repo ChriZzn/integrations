@@ -17,9 +17,10 @@ processors:
       field: event.category
       value: threat
       allow_duplicates: false
-  - set:
+  - append:
       field: event.type
-      value: [indicator]
+      value: indicator
+      allow_duplicates: false
   - json:
       field: event.original
       target_field: json
