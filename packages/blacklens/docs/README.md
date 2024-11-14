@@ -96,6 +96,7 @@ An example event for `alerts` looks as following:
     },
     "message": "{\"affected_entities\":null,\"alert_outcome\":\"undefined\",\"alert_payload\":[],\"reference\":\"https://example.com/reference123\"}],\"alert_status\":\"resolved\",\"created_date\":\"2024-11-07T08:09:22.094028Z\",\"customer_state\":\"open\",\"details\":{\"engine\":\"Example Threat System (ETS)\",\"id\":1001,\"title\":\"Example Threat Scan Notification\"},\"id\":12345,\"severity\":\"info\",\"type_id\":1001,\"updated_date\":\"2024-08-14T15:06:13.151728Z\"}",
     "event": {
+        "id": 12345,
         "agent_id_status": "verified",
         "ingested": "2024-11-07T09:45:30Z",
         "created": "2024-11-07T09:45:29.354Z",
