@@ -38,11 +38,11 @@ processors:
       target_field: blacklens.alert.updated_date
       formats:
         - ISO8601
-  - set:
-      field: event.id
-      copy_from: json.id
-      override: false
-      ignore_empty_value: true
+  - convert:
+      field: json.id
+      target_field: event.id
+      type: string
+      ignore_missing: true
   - rename:
       field: json.id
       target_field: blacklens.alert.id
